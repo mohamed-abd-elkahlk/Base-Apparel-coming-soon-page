@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    flex-direction: column;
+}
+.main-img img{
+    width: 460px;
+}
+.image{
+    display: none;
+}
+.container{
+    display: flex;
+}
+.content{
+    padding: 0 100px;
+}
+.head .logo{
+    margin-bottom:80px ;
+}
+.head h1{
+    text-transform: uppercase;
+    font-size: 64px;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.head h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: normal;
+}
+.content p{
+    width: 75%;
+    line-height: 1.6;
+    color:hsl(0, 93%, 68%) ;
+}
+.content form{
+    margin-top: 40px;
+    display: flex;
+}
+.content form .emial{
+    padding: 15px 30px;
+    border-radius:24px ;
+    border: none;
+    outline: 1px solid hsl(0, 93%, 68%);
+    width: 70%;
+}
+.content form .submit{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width:70px;
+    height: 50px;
+    background-image: linear-gradient(hsl(0, 93%, 68%), hsl(0, 36%, 70%));
+    border: none;
+    border-radius: 24px;
+    position: relative;
+    left:-65px ;
+    cursor: pointer;
+    transition: .3s;
+} 
+.content form .submit:hover{
+    box-shadow: 0 0 40px hsl(0, 93%, 68%);
+}
+.error{
+    position: absolute;
+    left: -35px;
+    display: none;
+}
+.error_massege{
+    margin-top: 10px;
+    margin-left: 20px;
+    color:hsl(0, 93%, 68%) ;
+}
+@media (max-width:767px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-img{
+        display: none;
+    }
+    .image{
+        display: block;
+    }
+    .content{
+        padding: 0;
+    }
+    .content p{
+        width: auto;
+    }
+    .content form{
+        margin-left:60px;
+    }
+    .main-img img{
+        width: 320px;
+    }
+}
